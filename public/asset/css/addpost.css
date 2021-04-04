@@ -1,0 +1,43 @@
+.title{
+    margin-left: 30%;
+    font-size: 70px;
+    font-weight: bold;
+}
+.label{
+    margin-left: 50px;
+    font-weight: bold;
+}
+.newpost{
+    background: #4a5568;
+}
+.titleform{
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+}
+.contentform{
+    text-align: start;
+    margin-left: 50px;
+    width: 800px;
+    height: 500px;
+}
+.postsub{
+    float: right;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    color: #edf2f7;
+    background: #2d3748;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 9px;
+}
+.postsub:hover
+{
+    background: #718096;
+    color: #a0aec0;
+}
+.addpost{
+    width: inherit;
+    height: inherit;
+}

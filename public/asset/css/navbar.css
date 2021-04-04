@@ -1,0 +1,68 @@
+.div{
+    width: inherit;
+    height: inherit;
+    color: #1a202c;
+    background: #1a202c;
+}
+
+.Home{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #718096;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Home:hover{
+    color: crimson;
+}
+.Navbar{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #718096;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Navbar:hover{
+    color: brown;
+}
+.button{
+float: right;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    color: #718096;
+    background: #2d3748;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 9px;
+}
+.button:hover{
+    background: #718096;
+    color: #cbd5e0;
+}
+.search{
+    float: right;
+    border-radius: 10px;
+    width: 350px;
+    height: inherit;
+}
+.searchinput{
+    margin-top: 8px;
+    border-radius: 10px;
+    height: 40px;
+}
+.formlogout{
+    float: right;
+    border-radius: 10px;
+    width: 350px;
+    height: inherit;
+}
+.number{
+    font-size: 25px;
+    font-weight: bold;
+    background: #ff0004;
+    border-radius: 10px;
+    color: peachpuff;
+    text-decoration: none;
+}

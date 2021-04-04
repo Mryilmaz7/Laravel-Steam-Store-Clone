@@ -1,0 +1,50 @@
+.images{
+    width: 350px;
+    height: 350px;
+}
+.contentt{
+    font-size: 20px;
+    font-weight: bold;
+}
+.names{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(22,22,22,0.78)
+}
+.contentform{
+    width: 1200px;
+    height: 200px;
+}
+.comment{
+    width: 1200px;
+    height: 200px;
+    background: #1a202c;
+    border-style: solid;
+    border: #1a202c;
+    border: 5px;
+    border-radius: 10px;
+}
+.commentp{
+    color: #edf2f7;
+    font-weight: bold;
+    font-size: 20px;
+}
+.brdr{
+    background: #2d3748 ;
+    color: beige;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: #0bff00;
+    border-style: double;
+    border: 15px;
+    border-color: #0bff00;
+    width: inherit;
+    height: inherit;
+}
+.name{
+    color : burlywood;
+    font-size: 20px;
+    font-weight: bold;
+}

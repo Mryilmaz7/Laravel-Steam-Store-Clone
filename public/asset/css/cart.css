@@ -1,0 +1,12 @@
+.table{
+    background: #1a202c;
+    color: #edf2f7;
+}
+.buy{
+    width: 100px;
+    height: 50px;
+    background: #53ff5f;
+    color: #1a202c;
+    font-weight: bold;
+    font-size: 20px;
+}

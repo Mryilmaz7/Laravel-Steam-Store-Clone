@@ -1,0 +1,8 @@
+.leftbar{
+    background:#1a202c;
+    float: left;
+    margin-top: 42px;
+    height: 520px;
+    width: 130px;
+    border-radius: 20px;
+}

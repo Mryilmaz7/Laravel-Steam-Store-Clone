@@ -1,0 +1,38 @@
+
+.form{
+    width: inherit;
+    height: inherit;
+    background: #2d3748;
+}
+.about{
+    position: relative;
+    left: 42%;
+    color: #cbd5e0;
+}
+.input{
+    height: 40px;
+    width: 30%;
+    position: relative;
+    left: 35%;
+text-align: center;
+    background: #1a202c;
+    color: #cbd5e0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input:hover{
+    background: #718096;
+    color: #1a202c;
+}
+.submit{
+    position: relative;
+    left: 70%;
+    bottom: 10%;
+    height: 35px;
+    border-radius: 10px;
+    background: #2d3748;
+    color: #e2e8f0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
