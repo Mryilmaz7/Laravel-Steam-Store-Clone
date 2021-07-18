@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="{{ asset('asset/css/leftbar.css') }}" >
 
-<div class="leftbar">
+<div class="leftBar">
 
+    <a class="leftNavbar" href="{{route('admin.addbalance')}}"><i class="fas fa-lira-sign"></i>{{$user->balance}}</a>
+    <a class="leftNavbar" href="{{route('admin.library')}}" >Library <i class="fas fa-gamepad"></i></a>
+    <a class="leftNavbar" href="{{route('admin.inventory')}}" >Inventory  <i class="fas fa-box-open"></i></a>
+    <a class="leftNavbar" href="{{route('mymarket')}}" >My Market <i class="fas fa-shopping-bag"></i></a>
 
-   <br> <a class="Navbar">Config <i class="fas fa-cogs"></i></a><br>
-    <a class="Navbar" href="{{route('admin.addbalance')}}">{{$user->balance}}</a><br>
-    <a href="{{route('admin.library')}}" class="Navbar">Library <i class="fas fa-gamepad"></i></a>
-    <a href="{{route('admin.inventory')}}" class="Navbar">Inventory</a>
-    <a href="{{route('mymarket')}}" class="Navbar">My Market</a>
 </div>
+

@@ -1,0 +1,33 @@
+.menuBar{
+    float: left;
+    padding-top: 105px;
+    padding-left: 380px;
+    margin-top: 100px;
+}
+
+.Text{
+    display: block;
+    text-decoration: none;
+    color: #357ec5;
+    font-size: 14px;
+}
+.Text+.Text{
+    margin-top: 5px;
+}
+
+.Text+*{
+    margin-top: 10px;
+}
+.Text:hover{
+    color: white;
+}
+.OnText{
+
+    color: #c6d4df;;
+    font-size: 15px;
+}
+.Steamper{
+    width: 210px;
+    height: 115px;
+    border-bottom: 3px #0bff00;
+}

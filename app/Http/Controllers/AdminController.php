@@ -8,6 +8,7 @@ use App\Models\Library;
 use App\Models\Posts;
 use App\Models\Products;
 use App\Models\User;
+use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -16,40 +17,51 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Validation\Rules\In;
 use VendorPackage\View\Components\AlertComponent;
+use Jenssegers\Agent\Agent;
+
 
 class AdminController extends Controller
 {
+
     use Notifiable;
     public function __construct()
     {
+
         $this->middleware('auth');
+
     }
 
     public function addproduct(Request $request)
     {
-        $name = $request->name;
-        $howmuch = $request->howmuch;
-        $image = $request->image;
-        $content = $request->content;
-        $imagetwo = $request->imagetwo;
-        $imagethree = $request->imagethree;
+        $user = auth()->user();
+        $name =        $request->name;
+        $howmuch =     $request->howmuch;
+        $image =       $request->image;
+        $content =     $request->content;
+        $imagetwo =    $request->imagetwo;
+        $imagethree =  $request->imagethree;
+        $genres=       $request->genres;
 
         $data = [
             'name' => $name,
             'howmuch' => $howmuch,
+            'genres'=>$genres,
             'image' => $image,
             'imagetwo' => $imagetwo,
             'imagethree' => $imagethree,
-            'content' =>$content
-        ];
+            'content' =>$content,
 
+        ];
         Products::create($data);
+        return view('admin.addproduct',[
+            'user' =>$user,
+        ]);
 
     }
 
     public function Showaddproduct()
     {
-        $product = Products::select('name', 'howmuch', 'image','imagetwo','imagethree','content')->get();
+        $product = Products::select('name', 'howmuch', 'image','imagetwo','imagethree','content','genres')->get();
         $user = auth()->user();
         return view('admin.addproduct', [
             'user' => $user,
@@ -89,6 +101,9 @@ class AdminController extends Controller
         DB::table('users')
             ->where('id', $user->id)
             ->update(['balance' => $user->balance + $balance]);
+        return view('admin.addbalance',[
+            'user' =>$user,
+            ]);
     }
 
 
@@ -263,7 +278,7 @@ class AdminController extends Controller
 
             'library'=>$library,
             'user' => $user,
-            'product' => $product
+            'product' => $product,
         ]);
     }
     // LIBRARY
@@ -312,7 +327,9 @@ class AdminController extends Controller
                 Library::create($data);
 
             }
+            \Cart::session(auth()->id())->clear();
             return redirect()->route('cart.index')->with('success','The purchase is successful.');
+
 
 
         }

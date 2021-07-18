@@ -1,31 +1,53 @@
 .div{
-    width: inherit;
-    height: inherit;
-    color: #1a202c;
-    background: #1a202c;
+    float: top;
+    background-color: #171a21;
+    height: 105px;
+    display:block;
 }
+/* Home */
 
 .Home{
-    font-size: 40px;
-    margin-top: 50px;
-    margin-left: 0px;
-    color: #718096;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    padding-top: 35px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    line-height: 16px;
+    color: #b8b6b4;
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    list-style: none;
+}
+.Home+.Home{
+    margin-left: 10px;
 }
 .Home:hover{
-    color: crimson;
+    color: white;
 }
-.Navbar{
-    font-size: 20px;
-    margin-left: 10px;
-    color: #718096;
+/* Auth */
+.Auth{
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    float: top;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
 }
-.Navbar:hover{
-    color: brown;
+.Home+.Auth{
+    padding-left: 400px;
 }
+.Auth+.Auth{
+    margin-left: 10px;
+}
+.Auth:hover {
+    color: white;
+}
+
 .button{
 float: right;
     border: none;
@@ -61,8 +83,23 @@ float: right;
 .number{
     font-size: 25px;
     font-weight: bold;
-    background: #ff0004;
+    background: black;
     border-radius: 10px;
-    color: peachpuff;
+    color: white;
     text-decoration: none;
+}
+.number:hover{
+    color: darkred;
+}
+.steampng{
+    margin-top: 0px;
+    height: 40px;
+    width: 40px;
+    margin-left: 500px;
+}
+.list li{
+    display: none;
+}
+.list:hover li{
+    display: block ;
 }

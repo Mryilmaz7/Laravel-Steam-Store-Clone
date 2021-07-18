@@ -4,6 +4,8 @@
     Home
 @endsection
 @section('Content')
+    @guest()
+        @else
     @foreach($product as $row)
         <div class="card" style="width: 18rem;">
         <img src="{{$row->image}}"  alt="" style="max-height: 320px" class="img">
@@ -16,6 +18,7 @@
                         <div class="alert alert-success" role="alert">
                             You have a game
                         </div>
+                @else
 
                   @endif
             @endforeach
@@ -25,6 +28,7 @@
 
 @endforeach
 @endsection
+@endguest
 @section('cs')
     <link rel="stylesheet" href="{{ asset('asset/css/Usepost.css') }}">
 @endsection

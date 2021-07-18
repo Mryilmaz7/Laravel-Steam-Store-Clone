@@ -5,9 +5,11 @@ Game
 @endsection
 @section('Content')
 @foreach($games as $row)
-<img class="images" src="{{$row->image}}">
-<img class="images" src="{{$row->imagetwo}}">
-<img class="images" src="{{$row->imagethree}}">
+    <ul class="bxslider">
+<li><img class="images" src="{{$row->image}}"></li>
+<li><img class="images" src="{{$row->imagetwo}}"></li>
+<li><img class="images" src="{{$row->imagethree}}"></li>
+    </ul>
 <h5 class="names">{{$row->name}}</h5>
 <h5 class="howmuch"><i class="fas fa-lira-sign"></i>{{$row->howmuch}}</h5>
 

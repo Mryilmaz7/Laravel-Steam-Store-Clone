@@ -1,0 +1,8 @@
+.card{
+    margin-top: 200px;
+    background: transparent;
+    color: white;
+}
+.card+ .card{
+    margin-left: 10px;
+}

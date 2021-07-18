@@ -1,0 +1,81 @@
+
+.bxslider li{
+    background:#13192c;
+    background-size: cover;
+}
+.contentt{
+    display: none;
+}
+.img{
+    width: 570px;
+    height: 450px;
+    text-align: center;
+    font-size: 30px;
+}
+.notLimage{
+}
+.commentbar{
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+.bxslider{
+
+  color: #2d3748;
+}
+.box{
+    background: transparent;
+}
+.containerimg{
+    display: inline-block;
+}
+.container1{
+    float: left;
+}
+.container2{
+    width: 400px;
+    --border-opacity: 0.3;
+    border-width: 1px;
+    border-style:solid;
+    border-color: #cbd5e0;
+    float: right;
+    display: block;
+}
+.img2 {
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 280px;
+    width: 49%;
+    float: right;
+}
+.img3{
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 280px;
+    width: 49%;
+    float: left;
+}
+.howmuch{
+    display: inline-block;
+    color: #cbd5e0;
+    float: left;
+    padding-top: 25%;}
+
+.cpu
+{
+    padding-top: 30%;
+    float: right;
+    display: inline-block;
+    color: #cbd5e0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home{
+    margin-top: 200px;
+}
+.BoxName{
+    color: #cbd5e0;
+
+}

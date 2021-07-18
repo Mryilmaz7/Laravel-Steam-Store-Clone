@@ -18,5 +18,5 @@ ADD BALANCE
 
 @endsection
 @section('cs')
-
+    <link rel="stylesheet" href="{{ asset('asset/css/add.css') }}">
 @endsection

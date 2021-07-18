@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->longText('imagetwo');
             $table->longText('imagethree');
             $table->text('content');
+            $table->text('genres');
             $table->timestamps();
         });
     }

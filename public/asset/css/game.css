@@ -1,16 +1,30 @@
+.bxslider, .bxslider li{
+    height: 100% !important;;
+}
+.bxslider li{
+    background:#13192c;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
 .images{
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 600px;
+    margin-left: 300px;
+    text-align: center;
+    background: #2d3748;
 }
 .contentt{
+    color: #cbd5e0;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 300px;
 }
 .names{
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: rgba(22,22,22,0.78)
+    color: #cbd5e0;
 }
 .contentform{
     width: 1200px;
@@ -44,7 +58,12 @@
     height: inherit;
 }
 .name{
-    color : burlywood;
+    color : #cbd5e0 ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.howmuch{
+    color :#cbd5e0;
     font-size: 20px;
     font-weight: bold;
 }

@@ -40,7 +40,10 @@ MyCart
     </tbody>
     </table>
 <h3>Total Price:{{\Cart::session(auth()->id())->getTotal()}} <i class="fas fa-lira-sign"></i></h3>
-<a class="addto btn btn-success" href="{{route('admin.buy')}}"  >Buy</a>
+
+<a class="addto btn btn-success" href="{{route('admin.buy'),route('cart.alldestroy')}}"  >Buy</a>
+
+
 
 <?php
 $total =\Cart::session(auth()->id())->getTotal();
@@ -49,11 +52,11 @@ $total =\Cart::session(auth()->id())->getTotal();
 @if($total > $user->balance)
     <h3>
         Insufficient Balance. </h3>
-
 @endif
 
 
 </form>
+
 
 @endsection
 @section('cs')
